@@ -11,6 +11,10 @@ git cz
 
 ## Install
 
+```
+npm install -g cz-keep-a-changelog
+```
+
 If you don't have commitizen yet:
 
 ```
@@ -21,6 +25,6 @@ Once you have commitizen, add the following to your package.json.
 
 ```
 "czConfig": {
-  "path": < path to this cloned repo >
+  "path": "./node_modules/cz-keep-a-changelog/"
 }
 ```
