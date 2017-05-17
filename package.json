@@ -1,27 +1,28 @@
 {
-  "name": "@mapbox/cz-mapbox-changelog",
-  "version": "1.1.2",
-  "description": "A commitizen plugin and git log parsing tool to create readable changelogs",
+  "name": "cz-keep-a-changelog",
+  "version": "1.0.0",
+  "description": "This is a [commitizen](http://commitizen.github.io/cz-cli/) plugin to make the writing of commit messages consistent with http://keepachangelog.com/en/0.3.0/ across a repo.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "new-change": "OLD=$(cat last-version) && NEW=$(git rev-parse HEAD) && echo '# '$NEW'\n' >> CHANGELOG.md && git log $OLD..$NEW | ./bin/parse-git-log --filter-out=UNCATEGORIZED >> CHANGELOG.md && echo $NEW > last-version"
-  },
-  "license": "BSD-3-Clause",
-  "config": {
-    "commitizen": {
-      "path": "./index.js"
-    }
-  },
   "dependencies": {
-    "word-wrap": "^1.1.0",
-    "yargs": "^3.29.0"
+    "word-wrap": "^1.2.2"
   },
-  "bin": {
-    "parse-git-log": "./bin/parse-git-log"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapbox/cz-mapbox-changelog.git"
-  }
+    "url": "git+https://github.com/jfr3000/cz-keep-a-changelog.git"
+  },
+  "author": "\"Julia Friesel <julia.friesel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfr3000/cz-keep-a-changelog/issues"
+  },
+  "homepage": "https://github.com/jfr3000/cz-keep-a-changelog#readme",
+  "keywords": [
+    "changelog",
+    "commitizen",
+    "keep-a-changelog"
+  ]
 }
