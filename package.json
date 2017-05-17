@@ -1,6 +1,6 @@
 {
   "name": "cz-keep-a-changelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a [commitizen](http://commitizen.github.io/cz-cli/) plugin to make the writing of commit messages consistent with http://keepachangelog.com/en/0.3.0/ across a repo.",
   "main": "index.js",
   "dependencies": {
